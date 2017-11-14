@@ -1,5 +1,20 @@
 <ion-view view-title="Search">
-  <ion-content>
+    <ion-nav-buttons side="secondary">
+        <button  class="button button-clear badge1" data-badge="{{itemsInCart||0}}" ng-click="goToCart()">
+         <i class="icon ion-ios-cart-outline"></i>
+        </button>
+      </ion-nav-buttons>
+      <div class="bar bar-subheader">
+          <div class="item-input-inset search-subheader">
+              <label class="item-input-wrapper">
+                <input type="text" placeholder="Email">
+              </label>
+              <a class="button button-small button-icon icon ion-android-microphone"></a>
+              <a class="button button-small button-icon icon ion-ios-barcode-outline"></a>
+              <a class="button button-small button-icon icon ion-ios-camera"></a>
+            </div>
+        </div>
+  <ion-content class="has-subheader searchpage">
     <h1>Search</h1>
   </ion-content>
 </ion-view>

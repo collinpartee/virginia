@@ -1,4 +1,4 @@
-<ion-view view-title="Playlists">
+<ion-view view-title="HomePage">
     <ion-nav-buttons side="secondary">
         <button  class="button button-clear badge1" data-badge="{{itemsInCart||0}}" ng-click="goToCart()">
          <i class="icon ion-ios-cart-outline"></i>
@@ -14,11 +14,14 @@
               <a class="button button-small button-icon icon ion-ios-camera"></a>
             </div>
         </div>
-  <ion-content class="has-subheader">
-    <ion-list>
+  <ion-content class="has-subheader homepage">
+    <h3>Home Page</h3>
+    <div>Some Nice Graphics</div>
+    
+    <!-- <ion-list>
       <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
         {{playlist.title}}
       </ion-item>
-    </ion-list>
+    </ion-list> -->
   </ion-content>
 </ion-view>
